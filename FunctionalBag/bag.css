@@ -1,0 +1,21 @@
+.chart{
+  background-color: lightgreen;
+  border: none;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+}
+.wishlist{
+  border: 2px solid black;
+  padding: 5px 30px 5px 30px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.sale{
+    background-color: lightgreen;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+}
+h1{
+  color: brown;
+}
