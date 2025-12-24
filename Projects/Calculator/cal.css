@@ -1,0 +1,66 @@
+#calculator{
+  border: 1px solid grey;
+  width: 200px;
+  border-radius: 5px;
+}
+header{
+  display: flex;
+  margin-left: 28px;
+  color: chocolate;
+}
+#display{
+  margin: 10px;
+  width: 85%;
+  font-size: 25px;
+}
+.button{
+  width: 45px;
+  height: 45px;
+  margin: 3px;
+  background-color: darkslategray;
+  color: white;
+  border: none;
+}
+.button:hover{
+  font-size: 150%;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#plus{
+  background-color: darkorange;
+  color: white;
+  border: none;
+}
+#minus {
+  background-color: darkorange;
+  color: white;
+  border: none;
+}
+#multiply {
+  background-color: darkorange;
+  color: white;
+  border: none;
+}
+#divide {
+  background-color: darkorange;
+  color: white;
+  border: none;
+}
+#equals {
+  background-color: darkorange;
+  color: white;
+  border: none;
+}
+#clear{
+  background-color: darkred;
+  color: white;
+  border: none;
+}
+#backspace{
+  background-color: green;
+  color: white;
+  border: none;
+}
