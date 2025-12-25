@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical operators in JS</title>
+  </head>
+  <body>
+    <head>
+      <h1>See logical operators behaviour in console</h1>
+    </head>
+    <main></main>
+    <footer></footer>
+
+    <script>
+      let age = 30;
+      if (age > 18 && age <= 65) {
+        //gives true if both true otherwise false.
+        console.log("You can Drive !");
+      } else if (age < 18 || age > 65) {
+        //gives true if any of one is true.
+        console.log("You are not allowed to drive !");
+      } else {
+        console.log("You can drive with applied DL.");
+      }
+      console.log(!true); //gives false in console as ! inverse the boolean value.
+    </script>
+  </body>
+</html>
