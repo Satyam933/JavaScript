@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falsy Values</title>
+  </head>
+  <body>
+    <main>
+      <h1>See all Falsy Value in console.</h1>
+    </main>
+    <script>
+      let a;
+      if (a) {
+        console.log("Truthy value !");
+      } else {
+        console.log(a + " is a falsy value !");
+      }
+
+      a = 0;
+      if (a) {
+        console.log("Truthy value !");
+      } else {
+        console.log(a + " is a falsy value !");
+      }
+
+      a = null;
+      if (a) {
+        console.log("Truthy value !");
+      } else {
+        console.log(a + " is a falsy value !");
+      }
+
+      a = false;
+      if (a) {
+        console.log("Truthy value !");
+      } else {
+        console.log(a + " is a falsy value !");
+      }
+
+      a = "";
+      if (a) {
+        console.log("Truthy value !");
+      } else {
+        console.log(a + " is a falsy value !");
+      }
+
+      a = 5 / "satyam";
+      if (a) {
+        console.log("Truthy value !");
+      } else {
+        console.log(a + " is a falsy value !");
+      }
+
+      // All values except falsy are truthly values.
+    </script>
+  </body>
+</html>
