@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Parameter</title>
+  </head>
+  <body>
+    <script>
+      function greeting(name = "Handsome") {
+        // defining default parameter value.
+        console.log(`welcome ${name}`);
+      }
+      console.log(greeting()); //print default parameter value in function.
+      console.log(greeting("Satyam"));
+    </script>
+  </body>
+</html>
