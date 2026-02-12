@@ -1,3 +1,10 @@
+let score = {
+  Win: 0,
+  Loss: 0,
+  Tie: 0,
+}
+
+
 function getComputerChoice() {
   let random = Math.random() * 3;
 
@@ -13,17 +20,23 @@ function playGame(userChoice) {
   console.log(`Computer choose ${computerChoice.toUpperCase()} !`);
 
   if (userChoice === computerChoice) {
-    alert('Match Drawn 🤝');
+    score.Tie = score.Tie + 1;
+    alert(`    Match Drawn 🤝
+      Won ${ score.Win } Loss ${score.Loss} Tie ${score.Tie}`);
   }
   else if (
     (userChoice === 'bat' && computerChoice === 'ball') ||
     (userChoice === 'ball' && computerChoice === 'stump') ||
     (userChoice === 'stump' && computerChoice === 'bat')
   ) {
-    alert('You Won 🏆');
+    score.Win = score.Win + 1;
+    alert(`    You Won 🏆
+    Won ${ score.Win } Loss ${score.Loss} Tie ${score.Tie}`);
   }
   else {
-    alert('You lose 😥');
+    score.Loss = score.Loss + 1;
+    alert(`    You lose 😥
+    Won ${ score.Win } Loss ${score.Loss} Tie ${score.Tie}`);
   }
 }
 
