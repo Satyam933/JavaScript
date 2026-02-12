@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Properties in JS</title>
+  </head>
+  <body>
+    <script>
+      let product = {
+        company: "H&M",
+        Salery: "20k",
+        Price: "5054",
+      };
+      let variable = product["company"]; // or let variable = product.company; Storing object property in variable
+      console.log(variable);
+      console.log(product);
+      delete product.Price;
+      console.log(product);
+      delete product["Salery"];
+      console.log(product);
+      product = null; //object deleted or ready for garbage collection
+      console.log(product);
+      console.log(variable); //printed value of company as it is stored in variable.
+    </script>
+  </body>
+</html>
